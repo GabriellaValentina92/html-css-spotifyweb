@@ -6,25 +6,44 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: sans-serif;
+    color: white;
+}
+
+h2{
+    font-family: 'League Gothic', sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+h3, .subtitle{
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Main box structure */
+
 .spotify-box{
     display: flex;
 }
 
 .side-bar{
-    flex: 0 0 250px;
+    flex: 0 0 200px;
     z-index: 3000;
     background-color: black;
 }
 
 .top-main{
-    flex: 0 0 calc(100% - 250px);
+    flex: 0 0 calc(100% - 200px);
     overflow-y: auto;
     background-color: #141922;
 }
 
 .top-bar{
     background-color: rgba( 0, 0, 0, 0.4);
-    height: 10vh;
+    height: 15vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,12 +52,10 @@
     position: relative;
 }
 
-
-
 .btn-top{
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 25px;
     color: white;
     border: 1px solid white;
     padding: 0.5rem 1rem;
@@ -48,8 +65,8 @@
 }
 
 .main-content{
-    height: calc(100vh - 10vh - 10vh);
-    padding-inline: 2rem;
+    height: calc(100vh - 15vh - 10vh);
+    padding: 1rem;
 }
 
 .main-content .nav-ricerca{
@@ -59,14 +76,37 @@
 }
 
 .nav-ricerca li{
-    color: white;
     list-style: none;
     padding: 0.8rem;
 }
 
 .nav-ricerca a{
+    font-size: 0.9rem;
     color: white;
     text-decoration: none;
+}
+
+.album{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.playlist{
+    flex: 0 0 calc((100% - (0.5rem * 5)) / 6);
+}
+
+.playlist img{
+    min-width: 0;
+    width: 200px;
+    display: block;
+}
+
+.row-third .img-round img{
+    display: block;
+    border-radius: 200px;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .bottom-bar{
