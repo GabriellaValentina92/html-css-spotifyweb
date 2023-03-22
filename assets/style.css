@@ -147,21 +147,6 @@ h3, .subtitle{
     color:  rgb(152, 150, 150);
 }
 
-.user{
-    display: flex;
-}
-
-.user img{
-    min-width: 0;
-    width: 20px;
-    margin-right: 0.5rem;
-    color: lightgray;
-}
-
-.user a{
-    font-size: 1rem;
-}
-
 
 /* Main- Albums */
 
