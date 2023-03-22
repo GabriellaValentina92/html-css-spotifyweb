@@ -1,0 +1,45 @@
+/* General settings */
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.spotify-box{
+    display: flex;
+    overflow-y: auto;
+}
+
+.side-bar{
+    flex: 0 0 250px;
+    z-index: 3000;
+    background-color: black;
+}
+
+.top-bar{
+    background-color: rgba(54, 2, 29, 0.4);
+    height: 10vh;
+    flex: 0 0 calc(100% - 250px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+}
+
+.main-content{
+    height: calc(100vh - 10vh - 10vh);
+    padding-inline: 2rem;
+    margin-top: 10vh;
+}
+
+.bottom-bar{
+    background-color: brown;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4000;  
+}
