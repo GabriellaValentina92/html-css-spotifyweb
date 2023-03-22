@@ -42,20 +42,19 @@ h3, .subtitle{
 }
 
 .top-bar{
-    background-color: rgba( 0, 0, 0, 0.4);
-    height: 15vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 2000;
-    position: relative;
+    background-color: rgba( 0, 0, 0, 0.4);
 }
 
 .btn-top{
-    position: absolute;
-    right: 0;
-    top: 25px;
     color: white;
     border: 1px solid white;
     padding: 0.5rem 1rem;
@@ -64,9 +63,112 @@ h3, .subtitle{
     text-decoration: none;
 }
 
-.main-content{
-    height: calc(100vh - 15vh - 10vh);
+/* Side bar elements */
+.side-bar{
     padding: 1rem;
+}
+
+.side-bar .logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.logo img{
+    min-width: 0;
+    width: 40px;
+    margin-right: 0.5rem;
+    color: white;
+}
+
+.logo h1{
+    font-size: 1.5rem;
+}
+
+.link-icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.link-icon img{
+    min-width: 0;
+    width: 30px;
+    padding-right: 0.5rem;
+}
+
+.link-icon a, .side-playlist a{
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: white;
+}
+
+.side-playlist h3{
+    text-align: start;
+    font-size: 0.8rem;
+}
+
+.side-playlist a{
+    font-size: 0.7rem;
+}
+
+.side-playlist .plus-icon{
+    font-size: 2rem;
+    padding-right: 0.5rem;
+}
+
+.play-name{
+    line-height: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.play-name a{
+    font-size: 0.7rem;
+    color: rgb(152, 150, 150);
+}
+
+.download-app{
+    display: flex;
+    margin-top: 8rem;
+    border-bottom: 1px solid grey;
+}
+
+.download-app img{
+    min-width: 0;
+    width: 20px;
+    margin-right: 0.5rem;
+    color:  rgb(152, 150, 150);
+}
+
+.download-app a{
+    font-size: 0.7rem;
+    text-decoration: none;
+    color:  rgb(152, 150, 150);
+}
+
+.user{
+    display: flex;
+}
+
+.user img{
+    min-width: 0;
+    width: 20px;
+    margin-right: 0.5rem;
+    color: lightgray;
+}
+
+.user a{
+    font-size: 1rem;
+}
+
+
+/* Main- Albums */
+
+.main-content{
+    height: calc(100vh - 10vh - 10vh);
+    padding: 1rem;
+    margin-top: 10vh;
 }
 
 .main-content .nav-ricerca{
@@ -106,11 +208,13 @@ h3, .subtitle{
     display: block;
     border-radius: 200px;
     object-fit: cover;
-    overflow: hidden;
 }
 
+
+/* bottom-bar play-music */
+
 .bottom-bar{
-    background-color: #282828;
     height: 10vh;
     z-index: 4000;  
+    background-color: #282828;
 }
