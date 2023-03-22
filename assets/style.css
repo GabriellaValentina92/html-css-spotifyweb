@@ -19,30 +19,58 @@
 .top-main{
     flex: 0 0 calc(100% - 250px);
     overflow-y: auto;
+    background-color: #141922;
 }
 
 .top-bar{
-    background-color: rgba(54, 2, 29, 0.4);
+    background-color: rgba( 0, 0, 0, 0.4);
     height: 10vh;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 2000;
+    position: relative;
+}
+
+
+
+.btn-top{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    text-decoration: none;
 }
 
 .main-content{
     height: calc(100vh - 10vh - 10vh);
     padding-inline: 2rem;
-    margin-top: 10vh;
+}
+
+.main-content .nav-ricerca{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.nav-ricerca li{
+    color: white;
+    list-style: none;
+    padding: 0.8rem;
+}
+
+.nav-ricerca a{
+    color: white;
+    text-decoration: none;
 }
 
 .bottom-bar{
-    background-color: brown;
+    background-color: #282828;
     height: 10vh;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     z-index: 4000;  
 }
