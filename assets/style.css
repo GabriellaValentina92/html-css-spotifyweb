@@ -125,7 +125,6 @@ h3, .subtitle{
 
 .download-app{
     display: flex;
-    margin-top: 8rem;
     border-bottom: 1px solid grey;
 }
 
@@ -251,4 +250,27 @@ h3, .subtitle{
 .text span{
     font-size: 0.6rem;
     color: gray;
+}
+
+.play{
+    display: flex;
+    align-items: flex-start;
+    margin-top: -1.2rem;
+}
+
+.play i{
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+
+.minutes span{
+    font-size: 0.4rem;
+    padding-left: 0.5rem;
+}
+
+.minutes .minutes-bar ::after{
+    content: "";
+    width: 7px;
+    height: 1px;
+    background-color: aquamarine;
 }
