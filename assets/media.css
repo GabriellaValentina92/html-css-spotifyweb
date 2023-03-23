@@ -1,0 +1,30 @@
+@media screen and (max-width: 600px) {
+    
+    .spotify-box{
+        width: 100%;
+    }
+    
+    .side-bar{
+        flex: 0 0 50px;
+    }
+    
+    .top-main{
+        flex: 0 0 calc(100% - 50px);
+    }    
+
+
+    .side-bar .logobig{
+        display: none;
+    }
+    
+    .side-bar .logosmall{
+        display: block;
+        width: 20px;
+    }
+
+
+    .section, .side-playlist{
+        display: none;
+    }
+}
+
