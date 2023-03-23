@@ -268,9 +268,73 @@ h3, .subtitle{
     padding-left: 0.5rem;
 }
 
-.minutes .minutes-bar ::after{
+.player{
+    position: relative;
+}
+
+.play::before{
     content: "";
-    width: 7px;
-    height: 1px;
-    background-color: aquamarine;
+    display: block;
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    bottom: -15px;
+    left: -80px;
+    font-size: 0.8rem;
+    background-color: lightgray;
+    z-index: 2;
+}
+
+.play::after{
+    content: " ";
+    display: block;
+    width: 300px;
+    height: 4px;
+    position: absolute;
+    bottom: -15px;
+    left: -80px;
+    background-color: grey;
+}
+
+.min-start{
+    position: absolute;
+    bottom: -20px;
+    left: -120px;
+    font-size: 0.8rem;
+}
+
+.min-end{
+    position: absolute;
+    bottom: -20px;
+    right: -120px;
+    font-size: 0.8rem;
+}
+
+.volume{
+    margin-right: 6rem;
+    font-size: 0.7rem;
+}
+
+.volume::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    bottom: 35px;
+    right: 70px;
+    font-size: 0.8rem;
+    background-color: lightgray;
+    z-index: 2;
+}
+
+.volume::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    bottom: 35px;
+    right: 10px;
+    background-color: grey;
 }
