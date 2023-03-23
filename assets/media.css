@@ -7,11 +7,14 @@
     .side-bar{
         flex: 0 0 50px;
     }
-    
+
     .top-main{
         flex: 0 0 calc(100% - 50px);
     }    
 
+    .side-bar .logo img{
+        width: 100%;
+    }
 
     .side-bar .logobig{
         display: none;
