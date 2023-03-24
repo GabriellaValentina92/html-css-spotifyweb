@@ -64,6 +64,11 @@ h3, .subtitle{
     border-radius: 1rem;
     margin-right: 2rem;
     text-decoration: none;
+    transition: 1s;
+}
+
+.btn-top:hover{
+    transform: scale(1.1);
 }
 
 /* Side bar elements */
@@ -84,17 +89,27 @@ h3, .subtitle{
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
+    width: max-content;
 }
 
 .link-icon img{
     min-width: 0;
     width: 30px;
     padding-right: 0.5rem;
+    opacity: 0.5;
+}
+
+.link-icon:hover a img{
+    opacity: 1;
 }
 
 .link-icon a, .side-playlist a{
     font-size: 0.7rem;
     text-decoration: none;
+    color: lightgrey;
+}
+
+.link-icon:hover a{
     color: white;
 }
 
@@ -103,13 +118,29 @@ h3, .subtitle{
     font-size: 0.8rem;
 }
 
-.side-playlist a{
-    font-size: 0.7rem;
+.icon-playlist{
+    display: flex;
+    align-items: center;
+    width: max-content;
 }
 
-.side-playlist .plus-icon{
+.icon-playlist .create{
+    font-size: 0.7rem;
+    color: lightgray;
+}
+
+.icon-playlist .plus-icon{
     font-size: 2rem;
     padding-right: 0.5rem;
+    opacity: 0.5;
+}
+
+.icon-playlist .plus-icon:hover{
+    opacity: 1;
+}
+
+.icon-playlist .create:hover{
+    color: white;
 }
 
 .play-name{
@@ -119,12 +150,18 @@ h3, .subtitle{
 }
 
 .play-name a{
+    width: max-content;
     font-size: 0.7rem;
     color: rgb(152, 150, 150);
 }
 
+.play-name:hover a{
+    color: white;
+}
+
 .download-app{
     display: flex;
+    align-items: center;
     border-bottom: 1px solid grey;
 }
 
@@ -132,13 +169,22 @@ h3, .subtitle{
     min-width: 0;
     width: 20px;
     margin-right: 0.5rem;
-    color:  rgb(152, 150, 150);
+    opacity: 0.5;
+}
+
+.download-app:hover img{
+    opacity: 1;
 }
 
 .download-app a{
+    width: max-content;
     font-size: 0.7rem;
     text-decoration: none;
     color:  rgb(152, 150, 150);
+}
+
+.download-app:hover a{
+    color: white;
 }
 
 .user{
@@ -159,7 +205,7 @@ h3, .subtitle{
 }
 
 
-/* Main- Albums */
+/* Main- navricerca */
 
 .main-content{
     height: calc(100vh - 10vh - 10vh);
@@ -176,14 +222,64 @@ h3, .subtitle{
 
 .nav-ricerca li{
     list-style: none;
+    margin-right: 0.5rem;
     padding: 0.8rem;
 }
 
 .nav-ricerca a{
     font-size: 0.9rem;
-    color: white;
+    white-space: nowrap;
+    color: lightgray;
     text-decoration: none;
 }
+
+.topmusic:hover, .podcast:hover,
+.ranking:hover, .genre:hover,
+.news:hover, .findout:hover{
+    color: white;
+}
+
+.topmusic::after, .ranking::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin-top: 0.8rem;
+    margin-left: 1.5rem;
+    background-color: greenyellow;
+    opacity: 0;
+
+}
+
+.podcast::after, .findout::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin-top: 0.8rem;
+    margin-left: 0.6rem;
+    background-color: greenyellow;
+    opacity: 0;
+}
+
+.genre::after, .news::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+    background-color: greenyellow;
+    opacity: 0;
+}
+
+.topmusic:hover::after, .podcast:hover::after,
+.ranking:hover::after, .genre:hover::after,
+.news:hover::after, .findout:hover::after{
+    opacity: 1;    
+}
+
+/* music-albums (photos and text) */
 
 .album{
     display: flex;
