@@ -364,6 +364,7 @@ h3, .subtitle{
 }
 
 .brano{
+    flex: 0 0 25%;
     display: flex;
     align-items: center;
     transition: 1s;
@@ -409,6 +410,10 @@ h3, .subtitle{
 .text span{
     font-size: 0.6rem;
     color: gray;
+}
+
+.player{
+    flex: 0 0 50%;
 }
 
 .play{
@@ -490,6 +495,7 @@ h3, .subtitle{
 }
 
 .volume{
+    flex: 0 0 25%;
     display: flex;
     align-items: center;
     justify-content: space-around;
